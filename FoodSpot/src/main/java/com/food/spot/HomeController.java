@@ -33,7 +33,47 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "index";
 	}
+	
+	
+	@RequestMapping("/about")
+	public String mvAbout()throws Exception{
+		return "/about";
+	}
+	
+	@RequestMapping("/blog")
+	public String mvBlog()throws Exception{
+		return "/blog";
+	}	
+	
+	@RequestMapping("contact")
+	public String mvContact()throws Exception{
+		return "/contact";
+	}	
+	
+	@RequestMapping("/elements")
+	public String mvElement()throws Exception{
+		return "/element";
+	}	
+	
+	@RequestMapping("/projectDetails")
+	public String mvProjectDetaile()throws Exception{
+		return "/project-details";
+	}
+
+	@RequestMapping("/project")
+	public String mvProject()throws Exception{
+		return "/project";
+	}
+	@RequestMapping("/service")
+	public String mvService()throws Exception{
+		return "/about";
+	}
+	@RequestMapping("/singleBlog")
+	public String mvsSngleBlog()throws Exception{
+		return "/single-blog";
+	}
+	
 	
 }
